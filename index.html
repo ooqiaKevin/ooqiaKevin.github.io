@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Paneek</title>
+	<!--<link rel="shortcut icon" href="https://material.io/favicon.ico">-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+<body>
+	<aside class="mdc-drawer mdc-drawer--modal">
+	    <div class="mdc-drawer__content">
+	      <nav class="mdc-list">
+	        <a class="mdc-list-item mdc-list-item--activated" href="#" aria-selected="true">
+	          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+	          <span class="mdc-list-item__text">Home</span>
+	        </a>
+	        <a class="mdc-list-item" href="#">
+	          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">desktop_windows</i>
+	          <span class="mdc-list-item__text">Examples</span>
+	        </a>
+	        <a class="mdc-list-item" href="#">
+	          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">ballot</i>
+	          <span class="mdc-list-item__text">FAQ</span>
+	        </a>
+	       	<a class="mdc-list-item" href="#">
+	          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">meeting_room</i>
+	          <span class="mdc-list-item__text">Login/Register</span>
+	        </a>
+	      </nav>
+	    </div>
+  	</aside>
+  	<div class="mdc-drawer-scrim"></div>
+	<div style="width: 100%;">
+
+		<header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+		  <div class="mdc-top-app-bar__row">
+		    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+		      <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+		      <span class="mdc-top-app-bar__title">Pannek</span>
+		    </section>
+		    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+				<div class="mdc-tab-bar" role="tablist">
+					<div class="mdc-tab-scroller">
+						<div class="mdc-tab-scroller__scroll-area mdc-tab-scroller__scroll-area--scroll" style="margin-bottom: 0px;">
+							<div class="mdc-tab-scroller__scroll-content">
+								<button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+									<span class="mdc-tab__content">
+										<span class="mdc-tab__text-label">Home</span>
+									</span>
+									<span class="mdc-tab-indicator mdc-tab-indicator--active">
+										<span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline" style=""></span>
+									</span>
+									<span class="mdc-tab__ripple mdc-ripple-upgraded" style="--mdc-ripple-fg-size:150px; --mdc-ripple-fg-scale:1.7736; --mdc-ripple-fg-translate-start:63px, -36.8125px; --mdc-ripple-fg-translate-end:50.75px, -51px;"></span>
+								</button>
+								<button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
+									<span class="mdc-tab__content">
+										<span class="mdc-tab__text-label">Examples</span>
+									</span>
+									<span class="mdc-tab-indicator">
+										<span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline" style=""></span>
+									</span>
+									<span class="mdc-tab__ripple mdc-ripple-upgraded" style="--mdc-ripple-fg-size:190px; --mdc-ripple-fg-scale:1.74162; --mdc-ripple-fg-translate-start:21.5px, -62.8125px; --mdc-ripple-fg-translate-end:63.6484px, -71px;">
+									</span>
+								</button>
+								<button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
+									<span class="mdc-tab__content">
+										<span class="mdc-tab__text-label">FAQ</span>
+									</span>
+									<span class="mdc-tab-indicator">
+										<span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline" style=""></span>
+									</span>
+									<span class="mdc-tab__ripple mdc-ripple-upgraded" style="--mdc-ripple-fg-size:169px; --mdc-ripple-fg-scale:1.75892; --mdc-ripple-fg-translate-start:116.703px, -67.3125px; --mdc-ripple-fg-translate-end:57.1094px, -60.5px;">
+									</span>
+								</button>
+								<button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
+									<span class="mdc-tab__content">
+										<span class="mdc-tab__text-label">Login/Register</span>
+									</span>
+									<span class="mdc-tab-indicator">
+										<span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline" style=""></span>
+									</span>
+									<span class="mdc-tab__ripple mdc-ripple-upgraded" style="--mdc-ripple-fg-size:169px; --mdc-ripple-fg-scale:1.75892; --mdc-ripple-fg-translate-start:116.703px, -67.3125px; --mdc-ripple-fg-translate-end:57.1094px, -60.5px;">
+									</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+		    </section>
+		  </div>
+		</header>
+
+		<main class="main-content" id="main-content">
+			<div class="container header" style="background-image: url('./assets/images/bg-header.jpg'); background-size: cover; background-repeat: no-repeat;background-position: right;">
+				<div class="container__row header">
+					<h1 class="title pt-200">Create 360° virtual tours of any place</h1>
+    				<h1 class="sub-title">In minutes without programming skills</h1>
+    				<button class="foo-button mdc-button mdc-button--raised mb-150">
+    					Click here to free start
+  					</button>
+				</div>
+			</div>
+			<div class="row mt-70 mb-70">
+				<div class="col-7 text-center">
+					<iframe class="video" src="https://www.youtube.com/embed/WsPW1BTDc7c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div class="col-5 pt-20 pb-20">
+					<h1 class="sub-title">
+						What is Paneek?
+					</h1>
+					<h3  style="font-weight: 100">			
+						Is an online service that allow you upload your own 360 images and use them to create fascinating 360° virtual tour.
+					</h3>
+					<h3  style="font-weight: 100">
+						No installation required, is easy like share a link.<br><br>
+						Cheaper than hire a professional photographer or programmer.<br><br>
+						You can add photos, videos, sounds, links and text.<br><br>
+						Get access to the broader public possible because work on mobile and desktop.<br><br>
+						Share your 360° virtual tours in any web or social network.
+					</h3>
+				</div>
+			</div>
+			<div class="row row__negative pt-50 pb-50" style="padding-right: 50px;padding-left: 50px;">
+				<div class="col-12">
+					<h1 class="sub-title text-center">
+						Features that you can use
+					</h1>
+				</div>
+				<div class="col-12">
+					<ul class="mdc-image-list mdc-image-list--masonry my-masonry-image-list">
+					  <li class="mdc-image-list__item">
+					    <img class="mdc-image-list__image" src="./assets/images/feactures/sound.jpg">
+					    <div class="mdc-image-list__supporting">
+					      <span class="mdc-image-list__label">Background sound tours</span>
+					    </div>
+					  </li>
+					  <li class="mdc-image-list__item">
+					    <img class="mdc-image-list__image" src="./assets/images/feactures/navigation.jpeg">
+					    <div class="mdc-image-list__supporting">
+					      <span class="mdc-image-list__label">Floor plan map</span>
+					    </div>
+					  </li>
+					  <li class="mdc-image-list__item">
+					    <img class="mdc-image-list__image" src="./assets/images/feactures/panorama.jpg">
+					    <div class="mdc-image-list__supporting">
+					      <span class="mdc-image-list__label">Import panoramas from Google</span>
+					    </div>
+					  </li>
+					  <li class="mdc-image-list__item">
+					    <img class="mdc-image-list__image" src="./assets/images/feactures/code.jpg">
+					    <div class="mdc-image-list__supporting">
+					      <span class="mdc-image-list__label">Web Developer options</span>
+					    </div>
+					  </li>
+					  <li class="mdc-image-list__item">
+					    <img class="mdc-image-list__image" src="./assets/images/feactures/audio.jpg">
+					    <div class="mdc-image-list__supporting">
+					      <span class="mdc-image-list__label">Audio synchronization</span>
+					    </div>
+					  </li>
+					  <li class="mdc-image-list__item">
+					    <img class="mdc-image-list__image" src="./assets/images/feactures/plans.jpg">
+					    <div class="mdc-image-list__supporting">
+					      <span class="mdc-image-list__label">Floor plan</span>
+					    </div>
+					  </li>	
+						<li class="mdc-image-list__item">
+					    <img class="mdc-image-list__image" src="./assets/images/feactures/hp.jpg">
+					    <div class="mdc-image-list__supporting">
+					      <span class="mdc-image-list__label">Harry potter - Diagon Alley</span>
+					    </div>
+					  </li>
+					  <li class="mdc-image-list__item">
+					    <img class="mdc-image-list__image" src="./assets/images/feactures/navigation-3.jpg">
+					    <div class="mdc-image-list__supporting">
+					      <span class="mdc-image-list__label">Navigation mode list</span>
+					    </div>
+					  </li>
+					  <li class="mdc-image-list__item">
+					    <img class="mdc-image-list__image" src="./assets/images/feactures/cards.jpg">
+					    <div class="mdc-image-list__supporting">
+					      <span class="mdc-image-list__label">Hostspot cards</span>
+					    </div>
+					  </li>
+					  <li class="mdc-image-list__item">
+					    <img class="mdc-image-list__image" src="./assets/images/feactures/freeze.jpg">
+					    <div class="mdc-image-list__supporting">
+					      <span class="mdc-image-list__label">Hotspots without interaction</span>
+					    </div>
+					  </li>
+					  <li class="mdc-image-list__item">
+					    <img class="mdc-image-list__image" src="./assets/images/feactures/icons.jpg">
+					    <div class="mdc-image-list__supporting">
+					      <span class="mdc-image-list__label">Custom icons</span>
+					    </div>
+					  </li>
+					  <li class="mdc-image-list__item">
+					    <img class="mdc-image-list__image" src="./assets/images/feactures/add-logo.jpg">
+					    <div class="mdc-image-list__supporting">
+					      <span class="mdc-image-list__label">Text label</span>
+					    </div>
+					  </li>
+						<li class="mdc-image-list__item">
+					    <img class="mdc-image-list__image" src="./assets/images/feactures/tiny-text.jpg">
+					    <div class="mdc-image-list__supporting">
+					      <span class="mdc-image-list__label">Hotspots with tiny text</span>
+					    </div>
+					  </li>
+					<li class="mdc-image-list__item">
+					    <img class="mdc-image-list__image" src="./assets/images/feactures/navigation-2.jpg">
+					    <div class="mdc-image-list__supporting">
+					      <span class="mdc-image-list__label">Floor plan map</span>
+					    </div>
+					  </li>
+					</ul>					
+				</div>
+			</div>
+			<div class="row pl-100 pr-100">
+				<div class="col-12">
+					<h1 class="sub-title text-center">
+						Pricing
+					</h1>
+					<h3 style="font-weight: 100" class="text-center">						
+						Paneek is free. you can start to create virtual tours now and when you feel ready to promote your tours, you can chosee any of our plans .If you have questions about them send us an email to info@paneek.net
+					</h3>
+				</div>
+				<div class="col-3">
+					<div class="mdc-card text-center">
+						<div class="row__primary">
+							<h2 style="font-weight: 100">Free</h2>
+							<h1 class="title">$0</h1>
+						</div>
+						<div class="card-content">
+							<h5 style="font-weight: 100">
+								Published tours and panoramas may include small advertisements to cover our costs. You can turn off the ads anytime by using a paid account.
+							</h5>
+							<h5 style="font-weight: 100">
+								Support for small business traffic
+							</h5>
+							<h5 style="font-weight: 100">
+								Some features are disabled
+							</h5>
+							<h5 style="font-weight: 100">
+								Unlimited tours and panoramas
+							</h5>
+						</div>
+					  <div class="mdc-card__actions text-center">
+					    <div class="mdc-card__action-buttons" style="margin-left: auto;margin-right: auto;">
+					      <button class="mdc-button mdc-card__action mdc-card__action--button">Start Now</button>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="mdc-card text-center">
+						<div class="row__purple">
+							<h2 style="font-weight: 100">1 Month</h2>
+							<h1 class="title">$10,99</h1>
+						</div>
+						<div class="card-content">
+							<h5 style="font-weight: 100">
+								"Unique payment" is for anyone that need all features for a period of time.
+							</h5>
+							<h5 style="font-weight: 100">
+								Support for small business traffic
+							</h5>
+							<h5 style="font-weight: 100">
+								No advertisements
+							</h5>
+							<h5 style="font-weight: 100">
+								Online Support english and spanish.
+							</h5>
+							<h5 style="font-weight: 100">
+								Additional features enabled.
+							</h5>
+							<h5 style="font-weight: 100">
+								Unlimited tours and panoramas
+							</h5>
+							<h5 style="font-weight: 100">
+								1 Gigabyte of space to upload custom icons and sounds
+							</h5>
+							<h5 style="font-weight: 100">
+								Tours will use a fast hosting to deliver your 360 images at top speed to users in different geographic locations
+							</h5>
+						</div>
+					  <div class="mdc-card__actions text-center">
+					    <div class="mdc-card__action-buttons" style="margin-left: auto;margin-right: auto;">
+					      <button class="mdc-button mdc-card__action mdc-card__action--button">Buy Now</button>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="mdc-card text-center">
+						<div class="row__blue">
+							<h2 style="font-weight: 100">3 Months</h2>
+							<h1 class="title">$30,99</h1>
+						</div>
+						<div class="card-content">
+							<h5 style="font-weight: 100">
+								"Unique payment" is for anyone that need all features for a period of time.
+							</h5>
+							<h5 style="font-weight: 100">
+								Support for small business traffic
+							</h5>
+							<h5 style="font-weight: 100">
+								No advertisements
+							</h5>
+							<h5 style="font-weight: 100">
+								Online Support english and spanish.
+							</h5>
+							<h5 style="font-weight: 100">
+								Additional features enabled.
+							</h5>
+							<h5 style="font-weight: 100">
+								Unlimited tours and panoramas
+							</h5>
+							<h5 style="font-weight: 100">
+								1 Gigabyte of space to upload custom icons and sounds
+							</h5>
+							<h5 style="font-weight: 100">
+								Tours will use a fast hosting to deliver your 360 images at top speed to users in different geographic locations
+							</h5>
+						</div>
+					  <div class="mdc-card__actions text-center">
+					    <div class="mdc-card__action-buttons" style="margin-left: auto;margin-right: auto;">
+					      <button class="mdc-button mdc-card__action mdc-card__action--button">Buy Now</button>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="mdc-card text-center">
+						<div class="row__turquise">
+							<h2 style="font-weight: 100">12 Months</h2>
+							<h1 class="title">$100,99</h1>
+						</div>
+						<div class="card-content">
+							<h5 style="font-weight: 100">
+								"Unique payment" is for anyone that need all features for a period of time.
+							</h5>
+							<h5 style="font-weight: 100">
+								No advertisements
+							</h5>
+							<h5 style="font-weight: 100">
+								Unlimited tours and panoramas
+							</h5>
+							<h5 style="font-weight: 100">
+								No limit of how many times your tours can be loaded.
+							</h5>
+							<h5 style="font-weight: 100">
+								Online Support english and spanish.
+							</h5>
+							<h5 style="font-weight: 100">
+								Additional features enabled.
+							</h5>
+
+							<h5 style="font-weight: 100">
+								1 Gigabyte of space to upload custom icons and sounds
+							</h5>
+							<h5 style="font-weight: 100">
+								Tours will use a fast hosting to deliver your 360 images at top speed to users in different geographic locations
+							</h5>
+						</div>
+					  <div class="mdc-card__actions">
+					    <div class="mdc-card__action-buttons" style="margin-left: auto;margin-right: auto;">
+					      <button class="mdc-button mdc-card__action mdc-card__action--button">Buy Now</button>
+					    </div>
+					  </div>
+					</div>
+				</div>												
+			</div>
+			<footer class="row pl-150 pr-150 mt-100 text-center">
+				<h1 class="sub-title"> 
+					Community
+				</h1>
+				<h3 style="font-weight: 100">	
+					Check out our fantastic blog, the perfect place to keep up-to-date with all the latest news, promotions and tutorials at paneek. 
+					<br>
+					<a href="//paneek.blogspot.com/" target="_blank">Paneek oficial blog</a>
+				</h3>
+				<h2>
+					<button class="foo-button mdc-button">
+    					<img src="./assets/images/facebook-box.png">
+  					</button>
+  					<button class="foo-button mdc-button">
+    					<img src="./assets/images/twitter.png">
+  					</button>
+  					<button class="foo-button mdc-button">
+    					<img src="./assets/images/youtube.png">
+  					</button>
+				</h2>
+				<h6>
+					 <i class="baseline-copyright icon-image-preview"></i> Copyright (c) 2018 All Rights Reserved.
+				</h6>
+			</footer>
+    	</main>
+
+	</div>
+
+
+  	<script src="bundle.js" async></script>
+</body>
+</html>
+
+
